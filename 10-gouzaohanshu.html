@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    function Cat(name,age,sex){
+    	this.name = name;
+    	this.age = age;
+    	this.sex = sex;
+    	this.sayName = function(){
+    		console.log("我是" +this.name)
+    	}
+    }
+
+    var cat = new Cat("喵喵",2,"male");
+
+    var white = new Cat("小白");
+    cat.sayName();
+
+    white.sayName();
+
+    // function fun(m) {
+    //     if (m > 10) {
+    //         return
+    //     } else {
+    //         return m;
+    //     } 
+
+    //     console.log("测试");
+    // }
+
+    // console.log(fun(9));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="numberlist">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<script>
+		var oLi = document.querySelectorAll('.numberlist li');
+		
+		for(var i = 0;i<oLi.length;i++){
+
+			oLi[i].onclick = (function(n){
+
+				return function(){
+					console.log(n);
+				}
+
+			})(i)
+
+		
+		}
+
+	</script>
+</body>
+</html>

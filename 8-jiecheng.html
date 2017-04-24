@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// function count(n){
+		// 	var result = 1;
+		// 	for(var i = 1;i<=n;i++){
+		// 		result = result * i;
+		// 	}
+		// 	return result;
+		// }
+
+		// console.log(count(3));
+
+		//递归函数
+
+		function count(n){
+			if(n === 1){
+				return 1; 
+			}else{
+				return n * count(n-1);
+			}
+		}
+
+		console.log(count(6));
+	</script>
+</body>
+</html>
